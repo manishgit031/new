@@ -1,0 +1,64 @@
+{% extends 'website/layout.html' %}
+{% block middle %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+      <style>
+        body{
+            background-color: rgb(228, 224, 220);
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            height: 500px;
+        }
+       form{
+        border: 1px solid gray;
+        padding: 10px;
+        width: 300px;
+       }
+      </style>
+</head>
+<body >
+    <form action=".py">
+    <h3><span></span>Register User</h3>
+    <div>
+        <label class="form-label" for="username">user name</label>
+        <div>
+            <input type="text" class="form-control" name="username">
+        </div>
+    </div>
+    <div>
+        <label class="form-label" for="password"> Password</label>
+        <div>
+            <input type="password" class="form-control" name="password">
+        </div>
+</div>
+<div>
+    <label class="form-label" for="city">your city</label>
+    <div>
+        <select name="city" >
+            <option value="">select your city</option>
+            <option value="">delhi</option>
+            <option value="">indore</option>
+            <option value="">bhopal</option>
+            <option value="">jabalpur</option>
+        </select>
+    </div>
+</div>
+<div>
+    <label for="subscribe" >subscribe</label>
+    <div >
+        <input type="checkbox" class="form-check-input" name="subscribe"><label>yes</label>
+    </div>
+</div>
+<div>
+    <button >Register</button>
+</form>
+</div>
+</body>
+</html>
+{% endblock %}
